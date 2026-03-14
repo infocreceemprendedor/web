@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microfinanciera | Créditos Rápidos</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4f7fb;
+color:#333;
+}
+
+header{
+background:#0A2A66;
+color:white;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+opacity:.8;
+}
+
+.hero{
+height:70vh;
+background:url('https://images.unsplash.com/photo-1556745757-8d76bdb6984b') center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.btn{
+background:#1DB954;
+color:white;
+padding:12px 25px;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+
+.section{
+padding:60px 40px;
+max-width:1200px;
+margin:auto;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:32px;
+color:#0A2A66;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.card-content h3{
+margin-top:0;
+color:#0A2A66;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+text-align:center;
+}
+
+.feature i{
+font-size:40px;
+color:#1DB954;
+margin-bottom:10px;
+}
+
+.form-box{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+max-width:600px;
+margin:auto;
+}
+
+input,select,textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+footer{
+background:#0A2A66;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:60px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Financiera Capital</h2>
+
+<nav>
+<a href="#">Inicio</a>
+<a href="#creditos">Créditos</a>
+<a href="#beneficios">Beneficios</a>
+<a href="#solicitar">Solicitar</a>
+<a href="#contacto">Contacto</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<h1>Créditos rápidos y seguros</h1>
+<p>Impulsamos a emprendedores y familias con financiamiento accesible</p>
+
+<button class="btn">Solicitar Crédito</button>
+
+</section>
+
+<section id="creditos" class="section">
+
+<h2>Nuestros Créditos</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3">
+<div class="card-content">
+<h3>Crédito Personal</h3>
+<p>Obtén dinero rápido para emergencias, estudios o proyectos personales.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc">
+<div class="card-content">
+<h3>Crédito Prendario</h3>
+<p>Préstamos garantizados dejando joyas u objetos de valor en garantía.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216">
+<div class="card-content">
+<h3>Crédito Grupal</h3>
+<p>Financiamiento para grupos de emprendedores o comerciantes.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="beneficios" class="section">
+
+<h2>¿Por qué elegirnos?</h2>
+
+<div class="features">
+
+<div class="feature">
+<i class="fa-solid fa-bolt"></i>
+<h3>Aprobación Rápida</h3>
+<p>Evaluamos tu crédito en pocas horas.</p>
+</div>
+
+<div class="feature">
+<i class="fa-solid fa-hand-holding-dollar"></i>
+<h3>Pagos Flexibles</h3>
+<p>Planes adaptados a tus ingresos.</p>
+</div>
+
+<div class="feature">
+<i class="fa-solid fa-user-shield"></i>
+<h3>Seguridad</h3>
+<p>Tus datos y garantías están protegidos.</p>
+</div>
+
+<div class="feature">
+<i class="fa-solid fa-users"></i>
+<h3>Atención Personalizada</h3>
+<p>Asesoría directa para cada cliente.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="solicitar" class="section">
+
+<h2>Solicitar Crédito</h2>
+
+<div class="form-box">
+
+<form>
+
+<input type="text" placeholder="Nombre completo">
+
+<input type="tel" placeholder="Teléfono">
+
+<select>
+<option>Tipo de crédito</option>
+<option>Personal</option>
+<option>Prendario</option>
+<option>Grupal</option>
+</select>
+
+<input type="number" placeholder="Monto solicitado">
+
+<textarea placeholder="Mensaje"></textarea>
+
+<button class="btn">Enviar Solicitud</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section id="contacto" class="section">
+
+<h2>Contacto</h2>
+
+<p style="text-align:center;font-size:18px">
+
+📍 Tumbes, Perú  
+<br><br>
+📞 +51 999 999 999  
+<br><br>
+✉ contacto@financieracapital.com
+
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Financiera Capital - Todos los derechos reservados</p>
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/51999999999">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
