@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Microfinanciera | Créditos Rápidos</title>
+
+<title>Crece Emprendedor | Créditos y Empeños</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -13,7 +15,11 @@
 box-sizing:border-box;
 margin:0;
 padding:0;
-font-family:Arial, Helvetica, sans-serif;
+font-family:'Segoe UI',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
@@ -21,36 +27,65 @@ background:#f4f7fb;
 color:#333;
 }
 
+/* HEADER */
+
 header{
-background:#0A2A66;
-color:white;
-padding:15px 40px;
+background:white;
+padding:12px 40px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+height:45px;
+}
+
+.logo span{
+font-weight:bold;
+font-size:20px;
+color:#1d6d3d;
 }
 
 nav a{
-color:white;
 margin-left:20px;
 text-decoration:none;
-font-weight:bold;
+font-weight:600;
+color:#333;
 }
 
 nav a:hover{
-opacity:.8;
+color:#1d6d3d;
 }
 
+/* HERO */
+
 .hero{
+
 height:70vh;
-background:url('https://images.unsplash.com/photo-1556745757-8d76bdb6984b') center/cover;
+
+background:
+linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+url("https://images.unsplash.com/photo-1556745757-8d76bdb6984b") center/cover;
+
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-color:white;
+
 text-align:center;
+
+color:white;
+
 padding:20px;
+
 }
 
 .hero h1{
@@ -60,21 +95,26 @@ margin-bottom:10px;
 
 .hero p{
 font-size:20px;
-margin-bottom:20px;
+margin-bottom:25px;
 }
 
 .btn{
-background:#1DB954;
+
+background:#2dbf6e;
 color:white;
 padding:12px 25px;
 border:none;
 border-radius:6px;
 font-size:16px;
 cursor:pointer;
+text-decoration:none;
+
 }
 
+/* SECTIONS */
+
 .section{
-padding:60px 40px;
+padding:70px 40px;
 max-width:1200px;
 margin:auto;
 }
@@ -83,156 +123,305 @@ margin:auto;
 text-align:center;
 margin-bottom:40px;
 font-size:32px;
-color:#0A2A66;
+color:#1d6d3d;
 }
 
+/* CARDS */
+
 .cards{
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
 }
 
 .card{
+
 background:white;
+
 border-radius:12px;
+
 overflow:hidden;
+
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
 transition:0.3s;
+
 }
 
 .card:hover{
-transform:translateY(-5px);
+transform:translateY(-6px);
 }
 
 .card img{
+
 width:100%;
-height:180px;
+height:200px;
 object-fit:cover;
+
 }
 
 .card-content{
+
 padding:20px;
+
 }
 
 .card-content h3{
-margin-top:0;
-color:#0A2A66;
+
+color:#1d6d3d;
+margin-bottom:10px;
+
 }
 
+.card-content ul{
+
+padding-left:20px;
+margin-top:10px;
+
+}
+
+/* BENEFICIOS */
+
 .features{
+
 display:grid;
+
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
 gap:30px;
+
 text-align:center;
+
 }
 
 .feature i{
+
 font-size:40px;
-color:#1DB954;
+
+color:#2dbf6e;
+
 margin-bottom:10px;
+
 }
 
+/* FORM */
+
 .form-box{
+
 background:white;
+
 padding:30px;
+
 border-radius:10px;
+
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
 max-width:600px;
+
 margin:auto;
+
 }
 
 input,select,textarea{
+
 width:100%;
+
 padding:12px;
+
 margin-bottom:15px;
+
 border-radius:6px;
+
 border:1px solid #ccc;
+
 }
+
+/* FOOTER */
 
 footer{
-background:#0A2A66;
+
+background:#1d6d3d;
+
 color:white;
+
 text-align:center;
+
 padding:30px;
+
 margin-top:60px;
+
 }
 
+/* WHATSAPP */
+
 .whatsapp{
+
 position:fixed;
+
 bottom:25px;
+
 right:25px;
+
 background:#25D366;
+
 color:white;
+
 width:60px;
+
 height:60px;
+
 border-radius:50%;
+
 display:flex;
+
 justify-content:center;
+
 align-items:center;
+
 font-size:30px;
+
 text-decoration:none;
+
 box-shadow:0 5px 15px rgba(0,0,0,0.3);
+
 }
 
 </style>
 </head>
 
+
 <body>
 
+
 <header>
-<h2>Crece Emprendedor</h2>
+
+<div class="logo">
+
+<img src="logo.png">
+
+<span>Crece Emprendedor</span>
+
+</div>
 
 <nav>
+
 <a href="#">Inicio</a>
 <a href="#creditos">Créditos</a>
 <a href="#beneficios">Beneficios</a>
 <a href="#solicitar">Solicitar</a>
 <a href="#contacto">Contacto</a>
+
 </nav>
+
 </header>
+
+
 
 <section class="hero">
 
 <h1>Créditos rápidos y seguros</h1>
-<p>Impulsamos a emprendedores y familias con financiamiento accesible</p>
 
-<a href="#solicitar" style="text-decoration: none;" class="btn">Solicitar Crédito</a>
+<p>Impulsando el crecimiento de emprendedores</p>
+
+<a href="#solicitar" class="btn">Solicitar Crédito</a>
 
 </section>
+
+
 
 <section id="creditos" class="section">
 
-<h2>Nuestros Créditos</h2>
+<h2>Tipos de Préstamos</h2>
 
 <div class="cards">
 
+
 <div class="card">
+
 <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3">
+
 <div class="card-content">
+
 <h3>Crédito Personal</h3>
-<p>Obtén dinero rápido para emergencias, estudios o proyectos personales.</p>
-</div>
+
+<p>Financiamiento rápido para cubrir emergencias, estudios o proyectos personales.</p>
+
+<strong>Requisitos:</strong>
+
+<ul>
+
+<li>DNI vigente</li>
+<li>Mayor de 18 años</li>
+<li>Número de celular activo</li>
+
+</ul>
+
 </div>
 
+</div>
+
+
+
 <div class="card">
+
 <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc">
+
 <div class="card-content">
+
 <h3>Crédito Prendario</h3>
-<p>Préstamos garantizados dejando joyas u objetos de valor en garantía.</p>
-</div>
+
+<p>Obtén dinero inmediato dejando joyas u objetos de valor como garantía.</p>
+
+<strong>Requisitos:</strong>
+
+<ul>
+
+<li>DNI vigente</li>
+<li>Objeto de valor</li>
+<li>Evaluación del artículo</li>
+
+</ul>
+
 </div>
 
+</div>
+
+
+
 <div class="card">
+
 <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216">
+
 <div class="card-content">
+
 <h3>Crédito Grupal</h3>
+
 <p>Financiamiento para grupos de emprendedores o comerciantes.</p>
+
+<strong>Requisitos:</strong>
+
+<ul>
+
+<li>Grupo mínimo de 3 personas</li>
+<li>DNI de cada integrante</li>
+<li>Actividad económica</li>
+
+</ul>
+
 </div>
+
 </div>
+
 
 </div>
 
 </section>
+
+
 
 <section id="beneficios" class="section">
 
@@ -241,32 +430,53 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 <div class="features">
 
 <div class="feature">
+
 <i class="fa-solid fa-bolt"></i>
-<h3>Aprobación Rápida</h3>
+
+<h3>Aprobación rápida</h3>
+
 <p>Evaluamos tu crédito en pocas horas.</p>
+
 </div>
 
+
 <div class="feature">
+
 <i class="fa-solid fa-hand-holding-dollar"></i>
-<h3>Pagos Flexibles</h3>
-<p>Planes adaptados a tus ingresos.</p>
+
+<h3>Pagos flexibles</h3>
+
+<p>Cuotas adaptadas a tu economía.</p>
+
 </div>
 
+
 <div class="feature">
+
 <i class="fa-solid fa-user-shield"></i>
+
 <h3>Seguridad</h3>
-<p>Tus datos y garantías están protegidos.</p>
+
+<p>Tus datos están protegidos.</p>
+
 </div>
 
+
 <div class="feature">
+
 <i class="fa-solid fa-users"></i>
-<h3>Atención Personalizada</h3>
-<p>Asesoría directa para cada cliente.</p>
+
+<h3>Atención personalizada</h3>
+
+<p>Asesoría directa.</p>
+
 </div>
 
 </div>
 
 </section>
+
+
 
 <section id="solicitar" class="section">
 
@@ -274,30 +484,34 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 
 <div class="form-box">
 
-<form>
+<form id="formulario">
 
-<input type="text" placeholder="Nombre completo">
+<input type="text" id="nombre" placeholder="Nombre completo" required>
 
-<input type="tel" placeholder="Teléfono">
+<input type="tel" id="telefono" placeholder="Teléfono" required>
 
-<select>
+<select id="credito">
+
 <option>Tipo de crédito</option>
-<option>Personal</option>
-<option>Prendario</option>
-<option>Grupal</option>
+<option>Crédito Personal</option>
+<option>Crédito Prendario</option>
+<option>Crédito Grupal</option>
+
 </select>
 
-<input type="number" placeholder="Monto solicitado">
+<input type="number" id="monto" placeholder="Monto solicitado">
 
-<textarea placeholder="Mensaje"></textarea>
+<textarea id="mensaje" placeholder="Mensaje adicional"></textarea>
 
-<button class="btn">Enviar Solicitud</button>
+<button class="btn" type="submit">Enviar Solicitud</button>
 
 </form>
 
 </div>
 
 </section>
+
+
 
 <section id="contacto" class="section">
 
@@ -308,22 +522,57 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 📍 Tumbes, Perú  
 <br><br>
 📞 +51 999 999 999  
-<br><br>
-✉ contacto@financieracapital.com
 
 </p>
 
 </section>
 
+
+
 <footer>
 
-<p>© 2026 Financiera Capital - Todos los derechos reservados</p>
+<p>© 2026 Crece Emprendedor</p>
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/51999999999">
+
+
+<a class="whatsapp" href="https://wa.me/51999999999" target="_blank">
+
 <i class="fa-brands fa-whatsapp"></i>
+
 </a>
+
+
+
+<script>
+
+document.getElementById("formulario").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+let nombre=document.getElementById("nombre").value;
+let telefono=document.getElementById("telefono").value;
+let credito=document.getElementById("credito").value;
+let monto=document.getElementById("monto").value;
+let mensaje=document.getElementById("mensaje").value;
+
+let texto=`Solicitud de crédito
+
+Nombre: ${nombre}
+Teléfono: ${telefono}
+Tipo: ${credito}
+Monto: ${monto}
+
+Mensaje: ${mensaje}`;
+
+let url="https://wa.me/51999999999?text="+encodeURIComponent(texto);
+
+window.open(url,"_blank");
+
+});
+
+</script>
 
 </body>
 </html>
