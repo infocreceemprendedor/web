@@ -5,8 +5,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Crece Emprendedor | Créditos y Empeños</title>
+<title>Crece Emprendedor | Casa de Préstamos y Empeños</title>
 
+<link rel="icon" href="logo.png" type="image/png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -349,7 +350,7 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 <h3>Crédito Personal</h3>
 
 <p>Financiamiento rápido para cubrir emergencias, estudios o proyectos personales.</p>
-
+<br>
 <strong>Requisitos:</strong>
 
 <ul>
@@ -376,6 +377,7 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 
 <p>Obtén dinero inmediato dejando joyas u objetos de valor como garantía.</p>
 
+<br>
 <strong>Requisitos:</strong>
 
 <ul>
@@ -401,7 +403,7 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 <h3>Crédito Grupal</h3>
 
 <p>Financiamiento para grupos de emprendedores o comerciantes.</p>
-
+<br>
 <strong>Requisitos:</strong>
 
 <ul>
@@ -519,9 +521,11 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 
 <p style="text-align:center;font-size:18px">
 
-📍 Tumbes, Perú  
+📍 Calle Andrés Araujo 214, Tumbes, Perú  
 <br><br>
-📞 +51 999 999 999  
+📞 +51 984 109 664  
+  <br><br>
+✉️ info.creceemprendedor@gmail.com  
 
 </p>
 
@@ -531,13 +535,15 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 
 <footer>
 
-<p>© 2026 Crece Emprendedor</p>
+<footer>
+  <p>© <span id="anio"></span> Crece Emprendedor</p>
+</footer>
 
 </footer>
 
 
 
-<a class="whatsapp" href="https://wa.me/51999999999" target="_blank">
+<a class="whatsapp" href="https://wa.me/51984109664" target="_blank">
 
 <i class="fa-brands fa-whatsapp"></i>
 
@@ -546,6 +552,7 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 
 
 <script>
+document.getElementById("anio").textContent = new Date().getFullYear();
 
 document.getElementById("formulario").addEventListener("submit",function(e){
 
@@ -566,7 +573,7 @@ Monto: ${monto}
 
 Mensaje: ${mensaje}`;
 
-let url="https://wa.me/51999999999?text="+encodeURIComponent(texto);
+let url="https://wa.me/51984109664?text="+encodeURIComponent(texto);
 
 window.open(url,"_blank");
 
